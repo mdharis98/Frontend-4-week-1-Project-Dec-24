@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend 4 week 1 Project Dec 24</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="filter-row">
+                <div class="filter-col">
+                    <input type="text" placeholder="Search By Name or Symbol" class="form-control" id="search"/>
+                </div>
+                <button class="btn" id="sortmktcap">
+                    Sort By Mkt Cap
+                </button>
+                <button class="btn" id="sortPer">
+                    Sort by percentage
+                </button>
+            </div>
+            <div class="table">
+                <div class="spinner-box" id="loader">
+                    <div class="three-quarter-spinner"></div>
+                </div>
+                <table id="dataTable">
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
